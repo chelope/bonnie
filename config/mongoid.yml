@@ -22,6 +22,5 @@ production:
       database: bonnie_production
       hosts:
         - <%= ENV.fetch('BONNIE_DB_HOSTNAME', 'localhost') %>:<%= ENV.fetch('BONNIE_DB_PORT', '27017') %>
-      options:
-        username: <%= ENV.fetch('BONNIE_DB_USER', 'BONNIE') %>
-        password: <%= ENV.fetch('BONNIE_DB_PASSWORD', 'password') %>
+      username: <%= ENV.fetch('BONNIE_DB_USER', 'BONNIE') %>
+      password: <%= ENV.fetch('BONNIE_DB_PASSWORD', 'password') %>
