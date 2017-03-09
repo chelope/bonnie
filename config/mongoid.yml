@@ -19,7 +19,7 @@ test:
 production:
   sessions:
     default:
-      database: bonnie_production
+      database: bonnie
       hosts:
         - <%= ENV.fetch('BONNIE_DB_HOSTNAME', 'localhost') %>:<%= ENV.fetch('BONNIE_DB_PORT', '27017') %>
       username: <%= ENV.fetch('BONNIE_DB_USER', 'BONNIE') %>
